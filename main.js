@@ -39,9 +39,9 @@ $(document).ready(function() {
     $('.title').append(brand());
   });
 
-  $(".generate").keydown(function(e){
+  $("#name").keydown(function(e){
     if(e.which === 13){
         $(".generate").click();
     }
-});
+  });
 });
