@@ -7,6 +7,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  margin: 0;
 }
 
 *:focus {
@@ -30,18 +31,19 @@ body {
 }
 
 .input-area {
-  padding-top: 107px;
-  padding-bottom: 20px;
+  padding: 100px 10% 20px;
   background-color: #707078;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
+  color: white;
+  line-height: 30px;
+  margin: 0 20px 10px 20px;
 }
 
 .input {
-  margin-right: 10px;
   display: inline-block;
+}
+
+#name {
+  margin-top: 25px;
 }
 
 .generate {
@@ -64,7 +66,7 @@ body {
 
 .result {
   margin: 0 auto;
-  margin-top: 150px;
+  margin-top: 50px;
   font-family: 'Marcellus SC', serif;
   font-weight: bold;
   font-size: 24px;
@@ -97,4 +99,29 @@ body {
   margin-top: 20px;
   display: block;
   font-size: 30px;
+}
+
+@media (max-width: 700px) {
+  .result {
+    font-size: 18px;
+    width: 350px;
+    height: 200px;
+  }
+
+  .logo {
+    margin-top: 10px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+  }
+
+  .username {
+    margin-top: 0;
+    font-size: 40px;
+  }
+
+  .title {
+    margin-top: 10px;
+    font-size: 20px;
+  }
 }
