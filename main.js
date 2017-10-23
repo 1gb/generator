@@ -19,12 +19,11 @@ $(document).ready(function() {
 
     var string = '<svg width="100%" height="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">' + rc() + '<path d="M ' + c(101) + ' ' + c(101) + ' L ' + c(101) + ' ' + c(101) + ' L ' + c(101) + ' ' + c(101) + ' L ' + c(101) + ' ' + c(101) +
     ' L ' + c(101) + ' ' + c(101) + ' z" fill="#010b1c" fill-opacity="0.7" /></svg>';
-    console.log(string);
     return string;
   };
 
   var brand = function() {
-    console.log(adjectives1.length, adjectives2.length, nouns.length);
+    // console.log(adjectives1.length, adjectives2.length, nouns.length);
     return (adjectives1[Math.floor(Math.random() * adjectives1.length)]) + ' ' +
       adjectives2[Math.floor(Math.random() * adjectives2.length)] + ' ' +
       nouns[Math.floor(Math.random() * nouns.length)];
