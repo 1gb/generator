@@ -42,13 +42,35 @@ body {
   display: inline-block;
 }
 
+input {
+  border: solid 1px white;
+  color: white;
+  background-color: #707078;
+  padding: 10px 7px;
+  font-size: 19px;
+  margin-right: 8px;  
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ccc;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #ccc;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #ccc;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #ccc;
+}
+
 #name {
   margin-top: 25px;
 }
 
 .generate {
   padding: 2px;
-  font-size: 12px;
+  font-size: 19px;
   color: white;
   display: inline-block;
   width: 110px;
